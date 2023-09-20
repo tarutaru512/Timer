@@ -23,30 +23,31 @@
                                 <buttonConfiguration key="configuration" style="plain" title="30秒">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                 </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7t-hZ-VnZ">
-                                <rect key="frame" x="70" y="596" width="74" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="5分">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="select30seconds" destination="BYZ-38-t0r" eventType="touchUpInside" id="1kl-HW-hfW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Aa-2z-hpr">
-                                <rect key="frame" x="222" y="596" width="90" height="50"/>
+                                <rect key="frame" x="222" y="596" width="110" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="10分">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="select10minutes" destination="BYZ-38-t0r" eventType="touchUpInside" id="lv2-ua-t1i"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNu-al-QtT">
-                                <rect key="frame" x="232" y="448" width="70" height="50"/>
+                                <rect key="frame" x="232" y="448" width="80" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="1分">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="select1minutes" destination="BYZ-38-t0r" eventType="touchUpInside" id="ddb-Fw-9gT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhV-Hj-Ttk">
                                 <rect key="frame" x="109" y="268" width="174" height="72"/>
@@ -55,14 +56,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7t-hZ-VnZ">
+                                <rect key="frame" x="53" y="596" width="103" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="5分">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="select5minutes" destination="BYZ-38-t0r" eventType="touchUpInside" id="DVK-vZ-I1p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="ZhV-Hj-Ttk" id="r1N-me-s3k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48" y="-2"/>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
