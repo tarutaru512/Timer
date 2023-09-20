@@ -63,6 +63,10 @@ class ViewController: UIViewController {
     }
 
     func startTimer(time: Int){
+        if timer != nil {
+            timer.invalidate()
+        }
+        
         timer = Timer.scheduledTimer(timeInterval: 1.0,
                                      target: self,
                                      selector: #selector(onTimerCalled),
